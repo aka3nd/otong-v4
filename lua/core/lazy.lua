@@ -13,6 +13,9 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 -- Memuat plugin
 require("lazy").setup("plugins")
 
