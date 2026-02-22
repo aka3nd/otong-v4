@@ -12,10 +12,10 @@ return {
 					null_ls.builtins.formatting.clang_format,
 
 					--linter
-					null_ls.builtins.diagnostics.cppcheck.with({
-						filetypes = { "c", "cpp", "objc", "objcpp" },
-						command = "/usr/local/bin/cppcheck",
-					}),
+					--null_ls.builtins.diagnostics.cppcheck.with({
+						--filetypes = { "c", "cpp", "objc", "objcpp" },
+						--command = "/usr/local/bin/cppcheck",
+					--}),
 				},
 			})
 

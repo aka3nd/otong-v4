@@ -34,7 +34,7 @@ return {
 
 		-- c/cpp--
 		vim.lsp.config("clangd", {
-			cmd = { "clangd19" },
+			cmd = { "clangd" },
 			init_options = {
 				fallbackFlags = { "-std=c++26" },
 			},
@@ -45,7 +45,8 @@ return {
 
 		-- lua language --
 		vim.lsp.config("lua_ls", {
-			cmd = { "/home/aka/lua-language-server/bin/lua-language-server" },
+			--cmd = { "/home/aka/lua-language-server/bin/lua-language-server" },
+			cmd = {"lua-language-server"},
 			filetypes = { "lua" },
 			capabilities = capabilities,
 		})
